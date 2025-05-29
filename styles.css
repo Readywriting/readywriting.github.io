@@ -299,19 +299,84 @@ body {
 }
 
 .book-image {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 180px;
     background: linear-gradient(135deg, #2563eb, #3b82f6);
-    border-radius: 12px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e7eb;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .book-image i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
+}
+
+.book-image .book-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Book spine effect for placeholder */
+.book-image::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 100%);
+    border-radius: 8px 0 0 8px;
+}
+
+/* Different colors for different books */
+.book-image.neurodiversity {
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+}
+
+.book-image.alt-ac {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.book-image.translation {
+    background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.book-image.pedagogue {
+    background: linear-gradient(135deg, #ea580c, #f97316);
+}
+
+.book-image.breathe {
+    background: linear-gradient(135deg, #0891b2, #06b6d4);
+}
+
+.book-image.laferriere {
+    background: linear-gradient(135deg, #7c2d12, #a3612b);
+}
+
+.book-image.hebert {
+    background: linear-gradient(135deg, #be185d, #db2777);
 }
 
 .book-content h3 {
@@ -564,6 +629,13 @@ body {
 
 .cv-item p {
     color: #6b7280;
+}
+
+.dissertation {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
 }
 
 /* Teaching Section */
