@@ -102,7 +102,7 @@ document.querySelectorAll('.section').forEach(section => {
 });
 
 // Add animation classes to cards and items
-document.querySelectorAll('.project-card, .publication-item, .course-card, .book-card').forEach((item, index) => {
+document.querySelectorAll('.project-card, .publication-item, .course-card, .book-card, .workshop-card, .leadership-card').forEach((item, index) => {
     item.style.animationDelay = `${index * 0.1}s`;
 });
 
