@@ -500,8 +500,30 @@ body {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+}
+
+/* Responsive breakpoints for projects grid */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 .project-card {
@@ -1622,10 +1644,6 @@ body {
     .publication-year {
         text-align: left;
         width: fit-content;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
     }
 
     .books-grid {
