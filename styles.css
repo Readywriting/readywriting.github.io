@@ -135,7 +135,7 @@ body {
 }
 
 .hero-title .highlight {
-    color: #fbbf24;
+    color: #f1f5f9;
 }
 
 .hero-subtitle {
@@ -171,12 +171,12 @@ body {
 }
 
 .btn-primary {
-    background: #fbbf24;
-    color: #333;
+    background: #3b82f6;
+    color: white;
 }
 
 .btn-primary:hover {
-    background: #f59e0b;
+    background: #2563eb;
     transform: translateY(-2px);
 }
 
